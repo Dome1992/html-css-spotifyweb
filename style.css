@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family:'Montserrat', sans-serif; ;
+    font-size: 14px;
+    color:white;
+    scroll-behavior: smooth;
+}
+
+/* stili container principale */
+#wrapper-up{
+    height: calc(100vh - 70px);
+    background-color: blue;
+    display: flex;
+}
+
+/* stili navbar */
+#navbar{
+    background-color: rgba(0, 0, 0, 0.342);
+    opacity: 0,5;
+    height: 70px;
+    width: calc(100% - 200px);
+    position: fixed;
+    z-index: 500;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#upgrade{
+    font-size: 10px;
+    background-color:rgba(0, 0, 0, 0.342) ;
+    color: white;
+    border:  1px solid white;
+    border-radius: 20px;
+    padding: 10px; 
+}
+
+/* stili sidebar*/
+#sidebar{
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    padding:15px;
+}
+
+#logo{
+    width: 70%;
+    margin-bottom:20px;
+}
+span{
+    color: #acacac;
+    font-size: 10px;
+}
+#plus{
+    background-color: #acacac;
+    padding:7px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom:10px;
+}
+
+/* stili main conteiner */
+#main-content{
+    flex-grow: 1;
+    height: 100%;
+    background-color:rgb(10, 10, 17);
+}
+
+/* stili controller */
+#controller{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(34, 34, 34);
+    
+}
+.bottom-footer{
+    display: flex;
+}
+
+#icon-footer{
+    padding-left:10px;
+}
+
+a{
+    text-decoration-line: none;
+   
+}
+#sinister{
+  width: 50px;
+}
