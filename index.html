@@ -58,42 +58,100 @@
         </div>
         <div id="main-content">
             <div id="navbar">
-                <a href="" id="upgrade">EFFETUA L'UPGRADE</a>
-               
-                
+                <a href="" id="upgrade">EFFETUA L'UPGRADE</a>   
             </div>
+            <div class="link-conteriner-content">
+                <div class="link-content">
+                        <a href=""><span>IN EVIDENZA</span></a>
+                        <a href=""><span>PODCAST</span></a>
+                        <a href=""><span>CLASSIFICHE</span></a>
+                        <a href=""><span>GENERE E MOOD</span></a>
+                        <a href=""><span>NUOVE USCITE</span></a>
+                        <a href=""><span>SCOPRI</span></a>
+                </div>
+            </div>
+
+            <div></div>
         </div>
     </div>
 
     <div id="controller">
          
         <div class="bottom-footer">
-<img src="img/sinister.jpeg" id="sinister">
-                <span>Sinister</span>
+            <img src="img/sinister.jpeg" id="sinister">
+            <div class="icon-footerleft">   
+            <span>Sinister</span>
                 <i class="fa-regular fa-heart" id="icon-footer"></i>
                 <i class="fa-regular fa-folder" id="icon-footer"></i>
+            </div> 
+        </div>
+
+        <div class="footercenter">
+           <div class="bottom-center">
+                <i class="fa-solid fa-shuffle" id="icon-footer"></i>
+                <i class="fa-solid fa-backward-step" id="icon-footer"></i>
+                <i class="fa-regular fa-circle-play" id="icon-footer" style="font-size: 20px;"></i>
+                <i class="fa-solid fa-forward-step" id="icon-footer"></i>
+                <i class="fa-solid fa-arrow-rotate-right" id="icon-footer"></i>
+           </div>
+           <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+          
+          <script>
+          var slider = document.getElementById("myRange");
+          var output = document.getElementById("demo");
+          output.innerHTML = slider.value;
+          
+          slider.oninput = function() {
+            output.innerHTML = this.value;
+          }
+          </script>
+      
+          <!--<div>
+             <input type="range" min="1" max="100" value="50" class="slider">
+           </div>--> 
+        </div>
+
+        <div class="bottom-footer">
+            <div>
+                <i class="fa-solid fa-list" id="icon-footer"></i>
+                <i class="fa-solid fa-display" id="icon-footer"></i>
+                <i class="fa-solid fa-volume-high" id="icon-footer"></i>
+            </div>
             
+            <div class="slidecontainer2">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+              
+              <script>
+              var slider = document.getElementById("myRange");
+              var output = document.getElementById("demo");
+              output.innerHTML = slider.value;
+              
+              slider.oninput = function() {
+                output.innerHTML = this.value;
+              }
+              </script>
         </div>
-
-        <div class="bottom-footer">
-           
-            <i class="fa-solid fa-shuffle" id="icon-footer"></i>
-            <i class="fa-solid fa-backward-step" id="icon-footer"></i>
-            <i class="fa-regular fa-circle-play" id="icon-footer"></i>
-            <i class="fa-solid fa-forward-step" id="icon-footer"></i>
-            <i class="fa-solid fa-arrow-rotate-right" id="icon-footer"></i>
-           
-        </div>
-
-        <div class="bottom-footer">
-            <i class="fa-solid fa-list" id="icon-footer"></i>
-            <i class="fa-solid fa-display" id="icon-footer"></i>
-            <i class="fa-solid fa-volume-high" id="icon-footer"></i>
-        </div>
+       
     </div>
 
 
-
+   <!--<div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+    
+    <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+--> 
 
 </body>
 </html>
