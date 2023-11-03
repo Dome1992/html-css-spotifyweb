@@ -71,6 +71,7 @@ li{
     flex-grow: 1;
     height: 100%;
     background-color:rgb(10, 10, 17);
+    overflow-y: auto;
 }
 .link-conteriner-content{
     display: flex;
@@ -90,24 +91,33 @@ li{
     display: flex;
     min-height: 200px;
     background-color: rgba(151, 151, 151, 0.021);
-    
+    margin:25px 0;
 }
-
-.cards{
-    background-color: red;
-    height: 180px;
+img{
+    width:90%;
+    height: auto;
+}
+/*.cards{
+   background-color: red;
+    height: 170px;
     margin: 10px;
    
    
-}
-.col{
+}*/
+
+
+.row{
     display: flex;
-    flex-direction: column;
-    width:30%;
-    text-align: center;
-
-
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top:35px;
 }
+.col1{
+    width: calc((100% / 6) - 10px);
+    text-align: center;
+    vertical-align: middle;
+}
+
 /* stili controller */
 #controller{
     display: flex;
