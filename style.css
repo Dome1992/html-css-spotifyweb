@@ -88,14 +88,14 @@ li{
    /* width: calc(100% - 200px);*/
     margin: 0 auto;
     display: flex;
+    min-height: 200px;
+    background-color: rgba(151, 151, 151, 0.021);
     
 }
 
 .cards{
     background-color: red;
     height: 180px;
-   /* width: calc(100% / 6);*/
-   flex-basis: 20%;
     margin: 10px;
    
    
@@ -103,6 +103,8 @@ li{
 .col{
     display: flex;
     flex-direction: column;
+    width:30%;
+    text-align: center;
 
 
 }
