@@ -75,6 +75,7 @@ li{
 .link-conteriner-content{
     display: flex;
     justify-content: center;
+    padding-bottom:30px;
 }
 .link-content{
     display: flex;
@@ -83,6 +84,28 @@ li{
     width: 70%;
 }
 
+.conteiner{
+   /* width: calc(100% - 200px);*/
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.cards{
+    background-color: red;
+    height: 180px;
+   /* width: calc(100% / 6);*/
+   flex-basis: 20%;
+    margin: 10px;
+   
+   
+}
+.col{
+    display: flex;
+    flex-direction: column;
+
+
+}
 /* stili controller */
 #controller{
     display: flex;
