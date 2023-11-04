@@ -37,7 +37,7 @@
     border:  1px solid white;
     border-radius: 20px;
     padding: 10px; 
-    
+    margin-right: 10px;
     
 }
 
@@ -52,10 +52,17 @@
     background-color: black;
     padding:15px;
 }
+#logo-small, #logo-sidebar {
+    display: none;
+}
 
 #logo{
-    width: 70%;
+    width: 150px;
     margin-bottom:20px;
+}
+#logo:hover, #logo-small:hover, #logo-sidebar:hover {
+    transform: scale(1.1);
+    
 }
 span{
     color: #acacac;
@@ -63,13 +70,18 @@ span{
 }
 span:hover{
     color: white;
+    
 }
+
 #plus{
     background-color: #acacac;
     padding:7px;
 }
 ul{
     list-style-type: none;
+}
+li:hover{
+    transform: scale(1.1);
 }
 li{
     margin-bottom:10px;
@@ -86,6 +98,7 @@ li{
     display: flex;
     justify-content: center;
     padding-bottom:30px;
+   
     
 }
 .link-content{
@@ -131,7 +144,12 @@ img{
     width:90%;
     height: auto;
 }
-
+img:hover{
+    opacity: 0.6;
+}
+.col1:hover{
+    transform: scale(1.1);
+}
 
 #artisti-bradius{
     border-radius: 50%;
@@ -188,6 +206,9 @@ img{
 #icon-footer{
     padding-left:10px;
     font-size: 12px;
+}
+#icon-footer:hover{
+    transform: scale(1.3);
 }
 
 .icon-footerleft{
@@ -266,16 +287,28 @@ a{
 }
 
 /* versione mini smartphone */
-@media all and (max-width:600px) {
-
-    #sidebar{
-        display: none;
-    }
-}
 
 @media all and (max-width:500px) {
 
-    #sidebar{
+   #sidebar{
+       /* display: block;*/
+        background-color: #000000;
+        width:70px;
+        
+    }
+    #logo{
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+    #logo-small{
         display: block;
+        width:50px;
+        margin-bottom:15px;
+    }
+    #logo-sidebar{
+        display: block;
+        width:30px;
     }
 }
