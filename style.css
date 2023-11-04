@@ -37,11 +37,17 @@
     border:  1px solid white;
     border-radius: 20px;
     padding: 10px; 
+    
+    
+}
+
+#upgrade:hover{
+    transform: scale(1.1);
 }
 
 /* stili sidebar*/
 #sidebar{
-    width: 200px;
+    width: 300px;
     height: 100%;
     background-color: black;
     padding:15px;
@@ -54,6 +60,9 @@
 span{
     color: #acacac;
     font-size: 10px;
+}
+span:hover{
+    color: white;
 }
 #plus{
     background-color: #acacac;
@@ -77,14 +86,36 @@ li{
     display: flex;
     justify-content: center;
     padding-bottom:30px;
+    
 }
 .link-content{
     display: flex;
     justify-content: space-around;
     padding-top: 90px;
     width: 70%;
+    flex-wrap: wrap;
 }
 
+#contento{
+   /* background-color: rgba(0, 0, 0, 0.6);
+    top:0px;
+    left:9px;
+    width: 171px;
+   width: calc((100% / 6) - 10px);
+    height: 171px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /*opacity: 0;
+    transition: 0.6s;*/
+   
+}
+#contento:hover{
+   /* opacity: 1;*/
+
+}
 .conteiner{
    /* width: calc(100% - 200px);*/
     margin: 0 auto;
@@ -93,9 +124,17 @@ li{
     background-color: rgba(151, 151, 151, 0.021);
     margin:25px 0;
 }
+h1{
+    font-size: 25px;
+}
 img{
     width:90%;
     height: auto;
+}
+
+
+#artisti-bradius{
+    border-radius: 50%;
 }
 /*.cards{
    background-color: red;
@@ -111,11 +150,13 @@ img{
     flex-wrap: wrap;
     gap: 10px;
     margin-top:35px;
+    margin-bottom:35px;
 }
 .col1{
     width: calc((100% / 6) - 10px);
     text-align: center;
     vertical-align: middle;
+    position: relative;
 }
 
 /* stili controller */
@@ -155,8 +196,11 @@ img{
 }
 a{
     text-decoration-line: none;
-   
+    color: white;
 }
+
+
+
 #sinister{
   width: 50px;
 }
@@ -203,4 +247,35 @@ a{
     border-radius: 50%;
     background:#00d021;
     cursor: pointer;
+}
+
+/* versione tablet*/
+@media all and (max-width:950px) {
+
+    .col1{
+        width: calc((100% / 4) - 10px);
+    }
+}
+
+/* versione smartphone*/
+@media all and (max-width:750px) {
+
+    .col1{
+        width: calc((100% / 2) - 10px);
+    }
+}
+
+/* versione mini smartphone */
+@media all and (max-width:600px) {
+
+    #sidebar{
+        display: none;
+    }
+}
+
+@media all and (max-width:500px) {
+
+    #sidebar{
+        display: block;
+    }
 }
