@@ -43,7 +43,10 @@
 
 #upgrade:hover{
     transform: scale(1.1);
+    background-color: rgb(245, 0, 233);
+    transition: 1.5s;
 }
+
 
 /* stili sidebar*/
 #sidebar{
@@ -51,7 +54,19 @@
     height: 100%;
     background-color: black;
     padding:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.playlist{
+    overflow-y: auto;
+}
+#profile{
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
 #logo-small, #logo-sidebar {
     display: none;
 }
@@ -60,6 +75,9 @@
     width: 150px;
     margin-bottom:20px;
 }
+
+
+
 #logo:hover, #logo-small:hover, #logo-sidebar:hover {
     transform: scale(1.1);
     
@@ -72,6 +90,14 @@ span:hover{
     color: white;
     
 }
+#arrow-down{
+    border: 1px solid #acacac;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 5px;
+}
+
+
 
 #plus{
     background-color: #acacac;
@@ -107,6 +133,9 @@ li{
     padding-top: 90px;
     width: 70%;
     flex-wrap: wrap;
+}
+#span-content:hover{
+    border-bottom: 1px solid rgb(0, 230, 0);
 }
 
 #contento{
@@ -144,7 +173,7 @@ img{
     width:90%;
     height: auto;
 }
-img:hover{
+.album:hover{
     opacity: 0.6;
 }
 .col1:hover{
@@ -213,7 +242,7 @@ img:hover{
 
 .icon-footerleft{
     padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 a{
     text-decoration-line: none;
@@ -238,7 +267,7 @@ a{
 
 .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 90%;
     height: 3px;
     border-radius: 5px;
     background: #d3d3d3;
@@ -291,7 +320,7 @@ a{
 @media all and (max-width:500px) {
 
    #sidebar{
-       /* display: block;*/
+       display: block;
         background-color: #000000;
         width:70px;
         
@@ -310,5 +339,14 @@ a{
     #logo-sidebar{
         display: block;
         width:30px;
+    }
+    .bottom-footer{
+        display: block;
+    }
+    #arrow-down2{
+        display: block;
+    }
+    #sinister{
+        display: none;
     }
 }
