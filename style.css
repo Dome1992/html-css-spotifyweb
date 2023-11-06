@@ -60,6 +60,7 @@
 }
 .playlist{
     overflow-y: auto;
+    padding-left:7px;
 }
 #profile{
     width: 20px;
@@ -80,6 +81,7 @@
 
 #logo:hover, #logo-small:hover, #logo-sidebar:hover {
     transform: scale(1.1);
+    filter: contrast(200%);
     
 }
 span{
